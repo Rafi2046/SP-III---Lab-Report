@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation From</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0px;
+    }
+
+    h5 {
+        margin-top: 4px;
+    }
+</style>
+
+<body style="font-family: 'Noto Sans', sans-serif; margin-bottom: 80px;">
+    <form>
+
+        <h1>Travel Reservation Form</h1>
+        <br>
+        <h3>* denotes mandatory</h3>
+        <br>
+        <h5>Full name*:</h5>
+        <input type="name" placeholder="FirstName LastName" required /> <br>
+        <h5>Email address*:</h5>
+        <input type="email" placeholder="EMAIL_ADDRESS" required /> <br>
+
+        <h5>Select Tour Package*:</h5>
+        <select default="Goa" required>
+            <option>Goa</option>
+            <option>Bali</option>
+            <option>Thiland</option>
+            <option>Nepal</option>
+        </select> <br>
+        <h5>Arrival date*:</h5>
+        <input type="date" required /> <br>
+        <h5>Number of persons*:</h5>
+        <input type="number" placeholder="UNKNOWN_TYPE" required />
+        <h5>What would you want to avail?*:</h5>
+        <label for="option1">Boarding</label>
+        <input type="checkbox" id="option1" name="options" value="Option1" />
+        <br>
+        <label for="option2">Fooding</label>
+        <input type="checkbox" id="option2" name="options" value="Option2" />
+        <br>
+        <label for="option3">Sight seeing</label>
+        <input type="checkbox" id="option3" name="options" value="Option3" /><br>
+        <h5>Discount Cupon code:</h5>
+        <input type="name" placeholder="Discount Cupon" /><br>
+        <h5>Terms and conditions*:</h5>
+        <span style="display: flex;">
+            <input type="radio" id="iAgree" name="tnc" value="I agree">
+            <label for="iAgree">I agree</label>
+            <br>
+            <input type="radio" id="iDisagree" name="tnc" value="I disagree">
+            <label for="iDisagree">I disagree</label><br>
+        </span><br>
+        <input style="font-family: 'Noto Sans', sans-serif;" type="submit" value="Complete reservation" />
+    </form>
+</body>
+
+</html>
